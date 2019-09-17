@@ -1,0 +1,54 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int bi_search(int num, vector<int> have){
+	int middle;
+	int left;
+	int right;
+	left=-1;
+	right=have.size();
+	middle = (left+right)/2;
+
+	while(1){
+		if(have[middle]==num) return 1;
+		else if(have[middle]<num){
+			if(left+2>=right) return 0;
+			else{
+				left=middle;
+				middle=(left+right)/2;
+			}
+		}
+		else{
+			if(left+2>=right) return 0;
+			else{
+				right=middle;
+				middle=(left+right)/2;
+			}
+		}
+	}
+}
+
+int main(){
+	vector<int> have;
+	int n,m,i;
+	int tmp;
+	int size;
+	int ans;
+
+	cin >> n;
+	for(i=0; i<n; i++){
+		cin >> tmp;
+		have.push_back(tmp);
+	}
+	sort(have.begin(), have.end());
+	size = have.size();
+
+	cin >> m;
+	for(i=0; i<m; i++){
+		cin >> tmp;
+		ans = bi_search(tmp, have);
+		cout << ans << " ";
+	}
+}
