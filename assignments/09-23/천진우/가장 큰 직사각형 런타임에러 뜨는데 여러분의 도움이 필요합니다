@@ -1,0 +1,63 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+	int i,j;
+	int n;
+	int tmp;
+	int end=0;
+	long long int ans, max;
+	int clo;
+	int size;
+	vector<int> h;
+	vector<int> height;
+	vector<int> location;
+
+	while(1){
+		cin >> n;
+		if(n==0) break;
+		for(i=0; i<n; i++){
+			cin >> tmp;
+			h.push_back(tmp);
+		}
+		h.push_back(0);
+		height.push_back(h[0]);
+		location.push_back(0);
+		max=0;
+		for(i=1; i<n+1; i++){
+			if(h[i]<height[end]){
+				while(1){
+					if(end==-1){
+						end++;
+						location[end]=0;
+						height[end]=h[i];
+						break;
+					}
+					if(h[i]<height[end]){
+						ans = (long long int)(i-location[end])*(long long int)height[end];
+						clo=location[end];
+						if(ans>max) max=ans;
+						end--;
+					}
+					else if(h[i]==height[end]) break;
+					else{
+						end++;
+						location[end]=clo;
+						height[end]=h[i];
+						break;
+					}
+				}
+			}
+			else if(h[i]>height[end]){
+				end++;
+				height[end]=h[i];
+				location[end]=i;
+			}
+		}
+		cout << max << endl;
+		h.clear();
+		height.clear();
+		location.clear();
+	}
+}
