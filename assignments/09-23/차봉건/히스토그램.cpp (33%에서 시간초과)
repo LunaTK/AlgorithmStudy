@@ -1,0 +1,65 @@
+#include <iostream>
+#include <vector>
+#include <set>
+
+using namespace std;
+
+int main(){
+
+	int n, i, element, max=0, flag, area;
+	vector<int> histogram;
+	set<int> height;
+	set<int>::iterator set_list;
+
+	while(1){
+	
+		cin >> n;
+
+		if(n==0){
+			break;
+		}
+
+		histogram.clear();
+		height.clear();
+		for(i=0;i<n;i++){
+			cin >> element;
+
+			histogram.push_back(element);
+			height.insert(element);
+		}
+		
+		flag = 0;
+		area = 0;
+		for(set_list=height.begin(); set_list!=height.end(); set_list++){
+			for(i=0;i<n;i++){
+				if(histogram[i] >= *set_list){
+					area += *set_list;
+					flag = 1;
+
+					if(i == n-1){
+						if(area>max){
+							max=area;
+						}
+					}
+				}
+				else{
+					if(flag == 1){
+						flag = 0;
+						if(area>max){
+							max = area;
+						}
+						area = 0;
+					}
+				}
+			}
+			area = 0;
+			
+		}
+		cout << max << "\n";
+
+	
+	}
+
+
+	return 0;
+}
