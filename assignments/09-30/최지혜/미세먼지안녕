@@ -1,0 +1,171 @@
+#include<iostream>
+
+using namespace std;
+
+
+int n, m, t;
+
+int arr[51][51] = { 0, };
+int temp[51][51] = { 0, };
+
+int con[2];
+
+int dx[4] = { 0,0, 1,-1 };
+int dy[4] = { 1,-1,0,0 };
+int main() {
+
+   cin >> n >> m >> t;
+   int val;
+   int c = 0;
+   for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= m; j++) {
+         cin >> val;
+         arr[i][j] = val;
+         if (val == -1) {
+            con[c] = i;
+            c++;
+         }
+      }
+   }
+
+
+   for (int time = 1;time <= t; time++) {
+
+      for (int i = 0; i < n; i++) {
+         for (int j = 0; j < m; j++) {
+            temp[i][j] = 0;
+         }
+      }
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= m; j++) {
+            int cnt = 0;
+            if (arr[i][j] > 0) {
+               for (int k = 0; k < 4; k++) {
+                  int newx = i + dx[k];
+                  int newy = j + dy[k];
+
+                  if (newx<1 || newy <1 || newx>n || newy>m||arr[i][j]==0)continue;
+                  if (arr[newx][newy] != -1) {
+                     cnt++;
+                     temp[newx][newy] += (int)(arr[i][j] / 5);
+                  }
+               }
+               temp[i][j] -= cnt * (int)(arr[i][j] / 5);
+               
+            }
+
+         }
+      }
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= m; j++) {
+            if (arr[i][j] != -1) {
+
+               arr[i][j] += temp[i][j];
+
+               if (arr[i][j] < 0) arr[i][j] = 0;
+               
+            }
+         }
+      }
+      arr[con[0]][1] = -1;
+      arr[con[1]][1] = -1;
+      //test
+      cout << endl;
+      cout << endl;
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= m; j++) {
+            cout << arr[i][j] << " ";
+         }
+         cout << endl;
+      }
+
+      int temp = arr[con[0]][m];
+      for (int i = n; i >1 ; i--) {
+         arr[con[0]][i+1] = arr[con[0]][i];
+
+      }
+      arr[con[0]][2] = 0;
+
+      
+
+      int temp1 = arr[1][m];
+      for (int i = 1; i <= con[0]; i++) {
+         cout <<arr[i + 1][m];
+         arr[i-1][m] = arr[i][m];
+      }
+      arr[con[0] - 1][m] = temp;
+
+
+      int temp2 = arr[1][1];
+      for (int i = 1; i != m; i++) {
+         arr[1][i] = arr[1][i + 1];
+      }
+      arr[1][m-1] = temp1;
+
+      for (int i = con[0] - 1; i != 1; i--) {
+         arr[i][1] = arr[i - 1][1];
+      }
+
+
+
+      
+      for (int i = con[0] - 1; i != 1; i--) {
+         arr[i-1][1] = arr[i][1];
+      }
+      //arr[2][1] = temp1;
+      
+      //밑 공기청정기
+      int temp11 = arr[con[1]][m];
+      for (int i = m-1; i != 1; i--) {
+         arr[con[1]][i + 1] = arr[con[1]][i];
+
+      }
+      arr[con[1]][2] = 0;
+
+      int temp22 = arr[n][m];
+      for (int i = n; i != con[1]; i--) {
+         cout << arr[i][n + 1];
+         arr[i +1][m] = arr[i][m];
+      }
+      arr[con[1]+1][m] = temp11;
+
+
+      int temp33 = arr[n][1];
+      for (int i = 2; i != m; i++) {
+         arr[n][i - 1] = arr[n][i];
+      }
+
+      arr[n][m - 1] = temp22;
+
+
+      
+      for (int i = con[1] + 1; i != n; i++) {
+         arr[i][1] = arr[i + 1][1];
+      }
+      arr[n - 1][1] = temp33;
+      //test
+      cout << endl;
+      cout << endl;
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= m; j++) {
+            cout << arr[i][j] << " ";
+         }
+         cout << endl;
+      }
+
+
+   }
+   cout << endl;
+   cout <<  endl;
+   int result = 0;
+   for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= m; j++) {
+         if (arr[i][j] != -1) {
+            result += arr[i][j];
+            cout << arr[i][j] << " ";
+         }
+      }
+      cout << endl;
+   }
+   cout << result << endl;
+}
