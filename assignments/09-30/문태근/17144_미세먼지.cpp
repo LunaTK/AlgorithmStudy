@@ -116,6 +116,19 @@ int total_dust() {
     return total_dust + 2;
 }
 
+void debug() {
+    cout << "-=-=-=-=-=-=-=-=-=-=-=-=-" << endl;
+    for (int i = 0; i < R; i++)
+    {
+        for (int j = 0; j < C; j++)
+        {
+            cout << field[i][j] << " ";
+        }
+        cout << endl;
+    }
+    
+}
+
 int main(void) {
     cin >> R >> C >> T;
 
@@ -136,6 +149,7 @@ int main(void) {
     {
         diffuse_proc();
         purify_proc();
+        debug();
     }
     
     cout << total_dust() << endl;
