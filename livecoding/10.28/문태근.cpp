@@ -41,7 +41,7 @@ int mst_cost() {
         }  else if (group[e.to] == 0) {
             group[e.to] = group[e.from];
         } else if (group[e.from] != group[e.to]) {
-            unify(group, e.from, e.to);
+            unify(group, group[e.from], group[e.to]);
         } else {
             continue;
         }
