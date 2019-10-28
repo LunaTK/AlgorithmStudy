@@ -33,7 +33,7 @@
 | 10/07 (월) 19:00 | 산학협력센터 85529 | Segment Tree | 주혜원 | [(2042)구간합 구하기](https://www.acmicpc.net/problem/2042)<br>[(1275)커피숍2](https://www.acmicpc.net/problem/1275) | - |
 | 10/14 (월) 19:00 | - | MST | 이한범 | - | - |
 | 10/21 (월) 19:00 | 휴강 | 휴강 | 휴강 | 휴강 | 휴강 |
-| 10/28 (월) 19:00 | 산학협력센터 85529 |  MST | 이한범 | [(1922)네트워크 연결](https://www.acmicpc.net/problem/1922)<br>[(1922)네트워크 연결](https://www.acmicpc.net/problem/1922) | - |
+| 10/28 (월) 19:00 | 산학협력센터 85529 |  MST | 이한범 | [(1922)네트워크 연결](https://www.acmicpc.net/problem/1922)<br>[(6497)전력난](https://www.acmicpc.net/problem/6497) | - |
 | 11/04 (월) 19:00 | - | - | 주혜원 | - | - |
 | 11/11 (월) 19:00 | - | - | 주영준 | - | - |
 | 11/18 (월) 19:00 | - | - | 최지혜 | - | - |
@@ -48,7 +48,7 @@
 | 09/23 (월) | [(6549)가장 큰 직사각형](https://www.acmicpc.net/problem/6549)<br>[(2188)축사 배정](https://www.acmicpc.net/problem/2188) | 이한범, 문태근, 최지혜, 주혜원, 차봉건, 천진우 | [가장 큰 직사각형](/assignments/09-23/문태근/6549_히스토그램.cpp)<br> |
 | 09/30 (월) | [(12100)2048 Easy](https://www.acmicpc.net/problem/12100)<br>[(17144)미세먼지 안녕!](https://www.acmicpc.net/problem/17144) | 주혜원, 이한범, 문태근, 차봉건, 천진우, 최지혜 |
 | 10/07 (월) | [(2243)사탕상자](https://www.acmicpc.net/problem/2243)<br>[(2357)최솟값과 최댓값](https://www.acmicpc.net/problem/2357) | 이한범, 주혜원, 차봉건, 주영준, 최지혜, 문태근, 천진우 |
-| 10/28 (월) | [(1922)네트워크 연결](https://www.acmicpc.net/problem/1922)<br>[(1922)네트워크 연결](https://www.acmicpc.net/problem/1922) | 이한범, 주혜원, 차봉건, 주영준, 최지혜, 문태근, 천진우 |
+| 10/28 (월) | [(1922)네트워크 연결](https://www.acmicpc.net/problem/1922)<br>[(6497)전력난](https://www.acmicpc.net/problem/6497) | 이한범, 주혜원, 차봉건, 주영준, 최지혜, 문태근, 천진우 |
 
 # Attendance
 |날짜|출석|결석|비고|
