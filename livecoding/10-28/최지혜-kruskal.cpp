@@ -30,6 +30,9 @@ int main() {
 		v.push_back(e);
 	}
 	sort(v.begin(), v.end(), cmp);
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i].c << endl;
+	}
 	int gid = 0;
 	int result = 0;
 	for (int i = 0; i < v.size(); i++) {
@@ -38,16 +41,21 @@ int main() {
 			arr[v[i].a] = gid;
 			arr[v[i].b] = gid;
 			result += v[i].c;
+			
 		}
-		else if (arr[v[i].a] != arr[v[i].b]) {
-			arr[v[i].a] = gid;
-			arr[v[i].b] = gid;
+		else if (arr[v[i].a]!=0 && arr[v[i].b] !=0 &&arr[v[i].a] != arr[v[i].b]) {
+			int x = arr[v[i].a];
+			for (int j = 0; j < 10001; j++) {
+				if (arr[j] == x) {
+					arr[j] = arr[v[i].a];
+				}
+			}
 			result += v[i].c;
 		}
-		else if (arr[v[i].a] != 0 && arr[v[i].a] == arr[v[i].b]) {
+		else {
 			continue;
 		}
-
+		cout << v[i].a << " " << v[i].b << endl;
 	}
 	cout << result << endl;
 
