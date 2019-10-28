@@ -30,9 +30,9 @@ int main() {
 		v.push_back(e);
 	}
 	sort(v.begin(), v.end(), cmp);
-	for (int i = 0; i < v.size(); i++) {
+	/*for (int i = 0; i < v.size(); i++) {
 		cout << v[i].c << endl;
-	}
+	}*/
 	int gid = 0;
 	int result = 0;
 	for (int i = 0; i < v.size(); i++) {
@@ -55,7 +55,7 @@ int main() {
 		else {
 			continue;
 		}
-		cout << v[i].a << " " << v[i].b << endl;
+		//cout << v[i].a << " " << v[i].b << endl;
 	}
 	cout << result << endl;
 
