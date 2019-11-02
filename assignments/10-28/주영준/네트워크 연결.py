@@ -52,7 +52,7 @@ for i in range(M):
 
 vertic = []
 for i in range(N):
-    vertic.append(i)
+    vertic.append(i+1)
 
 graph = {}
 
