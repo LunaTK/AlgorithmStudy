@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int n,m;
+	int i,j;
+	int arr[1010][1010];
+	int tmp1, tmp2, tmp3;
+	int max;
+	cin >> n >>  m;
+	for(i=1; i<=n; i++){
+		for(j=1; j<=m; j++){
+			cin >> arr[i][j];
+		}
+	}
+	for(i=1; i<=n; i++){
+		for(j=1; j<=m; j++){
+			if(i!=1) tmp1 = arr[i][j]+arr[i-1][j];
+			else tmp1 = arr[i][j];
+			if(j!=1) tmp2 = arr[i][j]+arr[i][j-1];
+			else tmp2 = arr[i][j];
+			if(i!=1 && j!=1) tmp3 = arr[i][j]+arr[i-1][j-1];
+			else tmp3 = arr[i][j];
+			max = tmp1;
+			if(tmp2>max) max=tmp2;
+			if(tmp3>max) max=tmp3;
+			arr[i][j]=max;
+		}
+	}
+	cout << arr[n][m] << endl;
+}
