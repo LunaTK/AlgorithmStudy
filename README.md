@@ -38,7 +38,7 @@
 | 11/11 (월) 19:00 | 휴강 | 휴강 | 휴강 | 휴강 | 휴강 |
 | 11/18 (월) 19:00 | 산학협력센터 85529 | Dynamic Programming | 최지혜 | - | - |
 | 11/25 (월) 19:00 | - | - | 천진우 | - | - |
-| 20/01/16 (월) 16:00 | 산학협력센터 85702 | OT/LG-CNS 기출 1문제 풀이 | 차봉건 | [(1783)병든 나이트](https://www.acmicpc.net/problem/1783)<br>[(6294)Solitaire](https://www.acmicpc.net/problem/6294) | - |
+| 20/01/16 (월) 16:00 | 산학협력센터 85702 | OT/LG-CNS 기출 1문제 풀이 | 차봉건 | - | - |
 
 # Assignments
 |날짜|목록|오른쪽 두명 코드리뷰 해주기|추천 풀이|
@@ -49,6 +49,8 @@
 | 09/30 (월) | [(12100)2048 Easy](https://www.acmicpc.net/problem/12100)<br>[(17144)미세먼지 안녕!](https://www.acmicpc.net/problem/17144) | 주혜원, 이한범, 문태근, 차봉건, 천진우, 최지혜 |
 | 10/07 (월) | [(2243)사탕상자](https://www.acmicpc.net/problem/2243)<br>[(2357)최솟값과 최댓값](https://www.acmicpc.net/problem/2357) | 이한범, 주혜원, 차봉건, 주영준, 최지혜, 문태근, 천진우 |
 | 10/28 (월) | [(1922)네트워크 연결](https://www.acmicpc.net/problem/1922)<br>[(6497)전력난](https://www.acmicpc.net/problem/6497) | 문태근, 주혜원, 천진우, 차봉건, 최지혜, 이한범, 주영준 |
+| 20/01/16 (목) | [(1783)병든 나이트](https://www.acmicpc.net/problem/1783)<br>[(6294)Solitaire](https://www.acmicpc.net/problem/6294) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
+
 
 # Attendance
 |날짜|출석|결석|비고|
