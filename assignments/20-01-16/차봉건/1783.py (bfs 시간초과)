@@ -1,0 +1,48 @@
+import queue
+
+input_num = input().split()
+
+N = int(input_num[0])
+M = int(input_num[1])
+
+updown = [2, 1, -1, -2]
+right = [1, 2, 2, 1]
+
+queue_coord = queue.Queue()
+queue_way = queue.Queue()
+queue_level = queue.Queue()
+
+queue_coord.put([0,0])
+queue_way.put(set([]))
+queue_level.put(1)
+
+final_level = 1
+
+while not queue_coord.empty():
+	
+	coord = queue_coord.get()
+	print('coord:', coord)
+	way = queue_way.get()
+	final_level = queue_level.get()
+
+	for i in range(4):
+		new_coordx = coord[0] + updown[i]
+		new_coordy = coord[1] + right[i]
+
+		if new_coordx < 0 or new_coordx >= N or new_coordy >= M:
+			continue
+
+		new_coord = [new_coordx, new_coordy]
+		new_way = set(way)
+		new_way.add(i)
+		new_level = final_level + 1
+
+		if new_level-1 >= 4:
+			if len(new_way) < 4:
+				continue
+
+		queue_coord.put(new_coord)
+		queue_way.put(new_way)
+		queue_level.put(new_level)
+
+print(final_level)
