@@ -21,7 +21,7 @@ final_level = 1
 while not queue_coord.empty():
 	
 	coord = queue_coord.get()
-	print('coord:', coord)
+	#print('coord:', coord)
 	way = queue_way.get()
 	final_level = queue_level.get()
 
