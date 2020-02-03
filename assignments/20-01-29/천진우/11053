@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+	int n;
+	int i,j;
+	int tmp;
+	vector<int> v;
+	
+	cin >> n;
+	cin >> tmp;
+	v.push_back(tmp);
+	for(i=0; i<n-1; i++){
+		cin >> tmp;
+		if(tmp > v.back()) v.push_back(tmp);
+		else{
+			for(j=0; j<v.size(); j++){
+				if(v[j]>=tmp){
+					v[j]=tmp;
+					break;
+				}
+			}
+		}
+	}
+	cout << v.size() << endl;
+}
