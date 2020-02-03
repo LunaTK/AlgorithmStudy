@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int arr[501];
+
+int main(){
+	int n, n1, n2;
+	int i,j;
+	vector<int> v;
+	vector<int> num;
+
+	cin >> n;
+	for(i=0; i<n; i++){
+		cin >> n1 >> n2;
+		arr[n1]=n2;
+	}
+	for(i=0; i<501; i++){
+		if(arr[i] != 0) num.push_back(arr[i]);
+	}
+
+	v.push_back(num[0]);
+	for(i=1; i<n; i++){
+		if(num[i] > v.back()) v.push_back(num[i]);
+		else{
+			for(j=0; j<v.size(); j++){
+				if(num[i] <= v[j]){
+					v[j] = num[i];
+					break;
+				}
+			}
+		}
+	}
+
+	cout << n-v.size() << endl;
+}
