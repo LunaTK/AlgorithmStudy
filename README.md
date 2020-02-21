@@ -40,6 +40,8 @@
 | 11/25 (월) 19:00 | - | - | 천진우 | - | - |
 | 20/01/16 (목) 16:00 | 산학협력센터 85702 | OT/LG-CNS 기출 1문제 풀이 | 차봉건 | - | - |
 | 20/01/29 (수) 16:00 | 산학협력센터 85712 | - | 주영준, 천진우 |  [(4963)섬의 개수](https://www.acmicpc.net/problem/4963)<br>[(15649)N과 M(1)](https://www.acmicpc.net/problem/15649) | - |
+| 20/02/12 (수) 16:00 | 산학협력센터 learning factory | - | 차봉건, 유재아 |  [(15663)N과 M(9)](https://www.acmicpc.net/problem/15663)<br>[(2293)동전 1](https://www.acmicpc.net/problem/2293) | - |
+| 20/02/19 (수) 16:00 | 반도체관 seminar room | - | 천진우, 이한범 |  [(2261)가장 가까운 두 점](https://www.acmicpc.net/problem/2261)<br>[(5568)카드 놓기](https://www.acmicpc.net/problem/5568) | - |
 
 # Assignments
 |날짜|목록|오른쪽 두명 코드리뷰 해주기|추천 풀이|
@@ -52,6 +54,9 @@
 | 10/28 (월) | [(1922)네트워크 연결](https://www.acmicpc.net/problem/1922)<br>[(6497)전력난](https://www.acmicpc.net/problem/6497) | 문태근, 주혜원, 천진우, 차봉건, 최지혜, 이한범, 주영준 |
 | 20/01/16 (목) | [(1783)병든 나이트](https://www.acmicpc.net/problem/1783)<br>[(6294)Solitaire](https://www.acmicpc.net/problem/6294) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
 | 20/01/29 (수) | [(2565)전깃줄](https://www.acmicpc.net/problem/2565)<br>[(11053)가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
+| 20/02/12 (수) | [(6549)히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549)<br>[(2042)구간 합 구하기](https://www.acmicpc.net/problem/2042) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
+
+
 
 
 # Attendance
@@ -65,6 +70,8 @@
 | 10/28 (월) | 문태근, 차봉건, 최지혜, 천진우, 이한범 | 주혜원, 주영준 | 병결 |
 | 20/01/16 (목) | 차봉건, 천진우, 손하민, 유재아| 주영준(코옵) | 손하민, 유재아 학우 참가 |
 | 20/01/29 (수) | 차봉건, 천진우, 유재아, 주영준| 손하민 | - |
+| 20/02/12 (수) | 차봉건, 천진우, 유재아, 주영준| 손하민 | - |
+| 20/02/19 (수) | 차봉건, 천진우, 유재아, | 손하민 | - |
 
 # Info
 <b id="white-board">화이트보드 면접</b> : 알고리즘 문제 풀이를 화이트 보드에 손으로 써가며 풀이를 평가받는 면접
