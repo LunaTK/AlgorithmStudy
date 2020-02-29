@@ -53,8 +53,8 @@
 | 10/07 (월) | [(2243)사탕상자](https://www.acmicpc.net/problem/2243)<br>[(2357)최솟값과 최댓값](https://www.acmicpc.net/problem/2357) | 이한범, 주혜원, 차봉건, 주영준, 최지혜, 문태근, 천진우 |
 | 10/28 (월) | [(1922)네트워크 연결](https://www.acmicpc.net/problem/1922)<br>[(6497)전력난](https://www.acmicpc.net/problem/6497) | 문태근, 주혜원, 천진우, 차봉건, 최지혜, 이한범, 주영준 |
 | 20/01/16 (목) | [(1783)병든 나이트](https://www.acmicpc.net/problem/1783)<br>[(6294)Solitaire](https://www.acmicpc.net/problem/6294) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
-| 20/01/29 (수) | [(2565)전깃줄](https://www.acmicpc.net/problem/2565)<br>[(11053)가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
-| 20/02/12 (수) | [(6549)히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549)<br>[(2042)구간 합 구하기](https://www.acmicpc.net/problem/2042) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
+| 20/01/29 (수) | [(2565)전깃줄](https://www.acmicpc.net/problem/2565)<br>[(11053)가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | 천진우, 차봉건, 주영준, 유재아 |
+| 20/02/12 (수) | [(6549)히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549)<br>[(2042)구간 합 구하기](https://www.acmicpc.net/problem/2042) | 천진우, 차봉건, 주영준, 유재아 |
 
 
 
