@@ -55,6 +55,7 @@
 | 20/01/16 (목) | [(1783)병든 나이트](https://www.acmicpc.net/problem/1783)<br>[(6294)Solitaire](https://www.acmicpc.net/problem/6294) | 천진우, 차봉건, 주영준, 손하민, 유재아 |
 | 20/01/29 (수) | [(2565)전깃줄](https://www.acmicpc.net/problem/2565)<br>[(11053)가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) | 천진우, 차봉건, 주영준, 유재아 |
 | 20/02/12 (수) | [(6549)히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549)<br>[(2042)구간 합 구하기](https://www.acmicpc.net/problem/2042) | 천진우, 차봉건, 주영준, 유재아 |
+| 20/03/17 (수) | [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)<br>[valid-parentheses](https://leetcode.com/problems/valid-parentheses/) | 천진우, 차봉건, 주영준, 유재아, 이한범 |
 
 
 
